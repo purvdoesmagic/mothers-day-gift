@@ -1,6 +1,6 @@
 # Mother's Day Gift 🌹
 
-A beautiful, interactive, and personalized web application created as a heartfelt Mother's Day gift. Designed for mobile, this single-page tribute is full of animations, thoughtful messages, and engaging micro-interactions.
+A beautiful, interactive, and personalized web application created as a heartfelt Mother's Day gift. Designed to look great on any device, this single-page tribute is full of animations, thoughtful messages, and engaging micro-interactions.
 
 ## ✨ Features
 
@@ -40,9 +40,9 @@ You can run this project locally with any simple HTTP server. For example:
    ```
 4. Open your browser and go to `http://localhost:3000`
 
-## 📱 Mobile First
+## 📱 Responsive & Accessible
 
-This project was built with a mobile-first approach. It utilizes `navigator.vibrate()` for haptic feedback when tapping interactive elements (like the hug button or planting flowers), providing a premium feel on modern smartphones.
+This project was built to look beautiful on any device, from desktop to mobile. On mobile devices, it even utilizes `navigator.vibrate()` for haptic feedback when tapping interactive elements (like the hug button or planting flowers), providing a premium tactile feel.
 
 ---
-*Created with ❤️ by Manu*
+*Created with Purv Doshi*
