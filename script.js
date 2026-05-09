@@ -154,7 +154,7 @@ function revealReason(card) {
 // ===== FLOWER GARDEN =====
 let flowerCount = 0;
 // A beautiful, diverse garden!
-const flowerEmojis = ['🌹', '🌹', '🌹', '🌹', '🌹', '🌸', '🌺', '🌻', '🌷', '🌼', '💮', '🏵️', '🌱'];
+const flowerEmojis = ['🌹', '🌹', '🌸', '🌺', '🌻', '🌷', '🌼', '💮', '🏵️', '🌱'];
 
 function plantFlower(event) {
     const garden = document.getElementById('gardenArea');
