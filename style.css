@@ -382,6 +382,7 @@ h1, h2, h3 {
 /* ===== REASONS SECTION ===== */
 .reasons-section {
     background: var(--gradient-soft);
+    text-align: center;
 }
 
 .reasons-grid {
@@ -390,6 +391,7 @@ h1, h2, h3 {
     gap: 1rem;
     max-width: 500px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .reason-card {
