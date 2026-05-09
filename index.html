@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Happy Mother's Day, Mom! 💐</title>
+    <meta name="description" content="A special Mother's Day tribute made with love">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Floating Hearts Background -->
+    <div id="floating-hearts" aria-hidden="true"></div>
+
+    <!-- Petal Rain Effect -->
+    <div id="petal-rain" aria-hidden="true"></div>
+
+    <!-- SECTION 1: Welcome / Hero -->
+    <section id="hero" class="section hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-flower" aria-hidden="true">🌹</div>
+            <p class="hero-subtitle fade-in">For the most amazing woman in my life</p>
+            <h1 class="hero-title fade-in" id="heroTitle"></h1>
+            <p class="hero-name fade-in">Mom 💖</p>
+            <p class="hero-love-note fade-in">You are loved beyond measure</p>
+            <div class="scroll-indicator fade-in" onclick="smoothScroll('#envelope')">
+                <span>Tap to open your surprise</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: Interactive Envelope -->
+    <section id="envelope" class="section envelope-section">
+        <h2 class="section-heading fade-in">You have a letter! 💌</h2>
+        <div class="envelope-container fade-in" id="envelopeCard" onclick="openEnvelope()">
+            <div class="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body">
+                    <div class="envelope-text">Tap me!</div>
+                </div>
+            </div>
+        </div>
+        <div class="letter-content" id="letterContent">
+            <div class="letter-paper">
+                <p class="letter-greeting">Dear Mom,</p>
+                <p>Thank you for every sacrifice, every hug, every meal made with love, and every time you believed in
+                    me when I didn't believe in myself.</p>
+                <p>You are my safe place, my biggest cheerleader, and the strongest person I know. Your love is the most
+                    powerful force in my world — it heals, it strengthens, and it makes everything beautiful. 🌹</p>
+                <p>You taught me what it means to love unconditionally. Every good thing in me comes from you. You
+                    deserve all the love and happiness in the universe. 💕</p>
+                <p>If I could give you one thing, it would be the ability to see yourself through my eyes — then you'd
+                    know how truly special you are. 🌟</p>
+                <p class="letter-closing">With all my love, forever and always,<br><span class="letter-signature">Manu
+                        ❤️</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Reasons I Love You -->
+    <section id="reasons" class="section reasons-section">
+        <h2 class="section-heading fade-in">Reasons I Love You 💕</h2>
+        <p class="section-sub fade-in">Tap each heart to reveal</p>
+        <div class="reasons-grid fade-in">
+            <div class="reason-card" onclick="revealReason(this)">
+                <div class="reason-front"><span class="heart-icon">💗</span></div>
+                <div class="reason-back">
+                    <p>Your warm hugs that make everything better</p>
+                </div>
+            </div>
+            <div class="reason-card" onclick="revealReason(this)">
+                <div class="reason-front"><span class="heart-icon">💗</span></div>
+                <div class="reason-back">
+                    <p>The way you always know what to say</p>
+                </div>
+            </div>
+            <div class="reason-card" onclick="revealReason(this)">
+                <div class="reason-front"><span class="heart-icon">💗</span></div>
+                <div class="reason-back">
+                    <p>Your incredible cooking that tastes like home</p>
+                </div>
+            </div>
+            <div class="reason-card" onclick="revealReason(this)">
+                <div class="reason-front"><span class="heart-icon">💗</span></div>
+                <div class="reason-back">
+                    <p>Your strength that inspires me every day</p>
+                </div>
+            </div>
+            <div class="reason-card" onclick="revealReason(this)">
+                <div class="reason-front"><span class="heart-icon">💗</span></div>
+                <div class="reason-back">
+                    <p>The way you love without limits and give without expecting anything back 🌹</p>
+                </div>
+            </div>
+            <div class="reason-card" onclick="revealReason(this)">
+                <div class="reason-front"><span class="heart-icon">💗</span></div>
+                <div class="reason-back">
+                    <p>Your endless patience and unconditional love</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Memory Timeline -->
+    <section id="timeline" class="section timeline-section">
+        <h2 class="section-heading fade-in">Our Beautiful Journey 🌸</h2>
+        <div class="timeline fade-in">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <h3>👶 The Beginning</h3>
+                    <p>You held me for the first time and your world changed forever — and so did mine.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <h3>🎒 Growing Up</h3>
+                    <p>You walked me to school, packed my lunch with love notes, and made every day an adventure.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <h3>🌟 Through It All</h3>
+                    <p>Through every challenge, every triumph, every tear — you were always right there beside me.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <h3>💖 Today & Forever</h3>
+                    <p>Today I celebrate you — the most extraordinary woman, my forever hero, my Mom.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: Virtual Flower Garden -->
+    <section id="garden" class="section garden-section">
+        <h2 class="section-heading fade-in">Tap to Grow a Garden for You 🌺</h2>
+        <p class="section-sub fade-in">Each tap plants a flower with love</p>
+        <div class="garden-area fade-in" id="gardenArea" onclick="plantFlower(event)">
+            <div class="garden-ground"></div>
+            <p class="garden-hint">Tap anywhere here! 🌱</p>
+        </div>
+        <div class="flower-counter fade-in">Flowers planted with love: <span id="flowerCount">0</span> 🌸</div>
+    </section>
+
+    <!-- SECTION 6: Wish Balloons -->
+    <section id="balloons" class="section balloons-section">
+        <h2 class="section-heading fade-in">Wishes for You, Mom 🎈</h2>
+        <p class="section-sub fade-in">Tap balloons to release wishes into the sky</p>
+        <div class="balloons-container fade-in">
+            <div class="balloon" style="--hue: 340" onclick="popBalloon(this)" data-wish="Endless happiness & joy!">🎈
+            </div>
+            <div class="balloon" style="--hue: 280" onclick="popBalloon(this)" data-wish="Perfect health always!">🎈
+            </div>
+            <div class="balloon" style="--hue: 200" onclick="popBalloon(this)" data-wish="All your dreams come true!">🎈
+            </div>
+            <div class="balloon" style="--hue: 45" onclick="popBalloon(this)" data-wish="Laughter every single day!">🎈
+            </div>
+            <div class="balloon" style="--hue: 150" onclick="popBalloon(this)" data-wish="Peace and serenity!">🎈</div>
+            <div class="balloon" style="--hue: 10" onclick="popBalloon(this)" data-wish="Love that never fades!">🎈
+            </div>
+        </div>
+        <div id="wishDisplay" class="wish-display"></div>
+    </section>
+
+    <!-- SECTION 7: Send a Hug -->
+    <section id="hug" class="section hug-section">
+        <h2 class="section-heading fade-in">Send Mom a Hug 🫂</h2>
+        <p class="section-sub fade-in">Tap the heart and hold tight</p>
+        <div class="hug-container fade-in">
+            <button class="hug-btn" id="hugBtn" onclick="sendHug()">
+                <span class="hug-emoji" id="hugEmoji">🫂</span>
+                <span class="hug-text">Tap to Hug</span>
+            </button>
+            <div class="hug-message" id="hugMessage"></div>
+            <div class="hug-counter fade-in">Hugs sent: <span id="hugCount">0</span> 💕</div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: Grand Finale -->
+    <section id="finale" class="section finale-section">
+        <div class="finale-content fade-in">
+            <div class="finale-hearts" aria-hidden="true">🌹💖🌸💕🌹💖</div>
+            <h2 class="finale-title">You Mean the World to Me</h2>
+            <p class="finale-message">Being your child is the greatest gift life ever gave me. You are the heartbeat of
+                our family, the love that holds everything together. Thank you for everything, Mom. Today and every day,
+                I love you more than words could ever say.</p>
+            <p class="finale-extra">I love you to the moon and back, infinity times over 💞</p>
+            <button class="celebration-btn" id="celebrateBtn" onclick="celebrate()">
+                🎉 Tap for a Surprise! 🎉
+            </button>
+            <div id="confettiCanvas"></div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
